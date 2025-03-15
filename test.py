@@ -1,4 +1,7 @@
 import math
 
-print(pow(2, 100))
-print(2**100)
+a = [1, 2, 3]
+b = a
+b[0] = 5
+print(a)
+print(b)
