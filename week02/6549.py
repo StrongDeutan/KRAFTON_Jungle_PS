@@ -14,6 +14,9 @@ while(True):
 
     stk = [[histogram[0], 0]]
     size = 1
+    
+    prev_idx = 0
+
     for i in range(1, n):       
         if(size == 0):
             stk.append([histogram[i], i])
@@ -26,9 +29,15 @@ while(True):
                     cur = stk.pop()
                     d = i - cur[1]
                     ans = max(ans, d * cur[0])
+                    print(f"{i, ans, d * cur[0], d} : pop")
                     ans = max(ans, (d + 1) * histogram[i])
+                    print(f"{i, ans, (d  + 1)* histogram[i], d} : push")
+                    print(f"{prev_idx, i} : prev")
                     # pop하면서 max연산 추가
                     size -= 1
+
+
+                prev_idx = i
             stk.append([histogram[i], i])
             size += 1
             ans = max(ans, histogram[i])            

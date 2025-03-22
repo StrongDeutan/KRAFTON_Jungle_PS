@@ -2,6 +2,8 @@ import sys
 
 
 def sol(s: str):
+    total = 0
+    stk = []    
     
 
     return
