@@ -2,6 +2,25 @@
 
 
 import sys
+    #rect_from_mid = hist[mid]
+
+    # while(left_point >= start and right_point < end):
+    #     if(hist[left_point] < hist[right_point]):
+    #         height = min(hist[right_point], height)
+    #         width += 1
+    #         rect_from_mid = max(rect_from_mid, height * width)
+    #         if(right_point < end - 1):
+    #             right_point += 1
+    #         else:
+    #             left_point -= 1
+    #     else:
+    #         height = min(hist[left_point], height)
+    #         width += 1
+    #         rect_from_mid = max(rect_from_mid, height * width)
+    #         if(left_point > start):
+    #             left_point -= 1
+    #         else:
+    #             right_point += 1
 
 while(True):
     row = list(map(int, sys.stdin.readline().split()))
